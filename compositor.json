@@ -1,0 +1,89 @@
+{
+  "name": "nlory-ma/PHP",
+  "version": "0.1.4",
+  "libraries": {
+    "xv": "^1.1.25"
+  },
+  "title": "",
+  "branch": "",
+  "style": {
+    "name": "Material",
+    "componentSet": {
+      "nav": "nav/DarkAbsoluteNav",
+      "header": "header/GradientHeader",
+      "article": "article/BasicArticle",
+      "footer": "footer/BasicFooter"
+    },
+    "fontFamily": "Roboto, sans-serif",
+    "heading": {
+      "fontWeight": 500,
+      "letterSpacing": "-0.01em"
+    },
+    "colors": {
+      "text": "#212121",
+      "background": "#fff",
+      "primary": "#2196f3",
+      "secondary": "#1565c0",
+      "highlight": "#ff4081",
+      "border": "#e0e0e0",
+      "muted": "#f5f5f5"
+    },
+    "layout": {
+      "centered": true,
+      "bannerHeight": "80vh",
+      "maxWidth": 896
+    }
+  },
+  "content": [
+    {
+      "component": "nav",
+      "links": [
+        {
+          "href": "http://gregwar.com/php/",
+          "text": "Home"
+        },
+        {
+          "href": "https://github.com/nlory-ma/PHP",
+          "text": "GitHub"
+        }
+      ]
+    },
+    {
+      "component": "header",
+      "heading": "PHP",
+      "subhead": "Cours de PHP",
+      "children": [
+        {
+          "component": "ui/TweetButton",
+          "text": "PHP: Cours de PHP",
+          "url": "http://gregwar.com/php/"
+        },
+        {
+          "component": "ui/GithubButton",
+          "user": "nlory-ma",
+          "repo": "PHP"
+        }
+      ]
+    },
+    {
+      "component": "article",
+      "metadata": {
+        "source": "github.readme"
+      },
+      "html": "<h1>Cours de PHP</h1>\n<p>Ce d&#xE9;p&#xF4;t contient le support d&apos;un enseignement PHP utilisant Slidey pour m&#xE9;langer contenu\ndu cours et des slides.</p>\n<p>Ce cours peut &#xEA;tre consult&#xE9; ici :</p>\n<p><a href=\"http://gregwar.com/php/\">http://gregwar.com/php/</a></p>\n<h2>Construction</h2>\n<p>Ce cours est bas&#xE9; sur <a href=\"https://github.com/Gregwar/SlideySkeleton\">Slidey</a>, vous pouvez le construire\nen utilisant:</p>\n<pre>composer<span class=\"hljs-selector-class\">.phar</span> install</pre><p>Puis, modifiez &#xE9;ventuellement la cible (<code>$targetDirectory</code>) dans <code>build.php</code>, et lancez:</p>\n<pre><span class=\"hljs-attribute\">make</span></pre><p>Pour avoir le mode interactif, cr&#xE9;ez un fichier <code>password.php</code>:</p>\n<pre><span class=\"hljs-meta\">&lt;?php</span>\n<span class=\"hljs-comment\">// password.php</span>\n<span class=\"hljs-keyword\">return</span> <span class=\"hljs-string\">&apos;motdepasse&apos;</span>;</pre><p>Avant de lancer <code>make</code>.</p>\n<h2>Licence</h2>\n<p>Le cours est sous licence <a href=\"http://creativecommons.org/licenses/by-nc/3.0/\">CC by-nc</a></p>\n"
+    },
+    {
+      "component": "footer",
+      "links": [
+        {
+          "href": "https://github.com/nlory-ma/PHP",
+          "text": "GitHub"
+        },
+        {
+          "href": "https://github.com/nlory-ma",
+          "text": "nlory-ma"
+        }
+      ]
+    }
+  ]
+}
